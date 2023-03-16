@@ -14,5 +14,6 @@ function uploadFile(image){
 };
 
 function refreshItem(){
-    var title = document.getElementById('aid-title').innerHTML = document.getElementById('title-input');
+    title = document.getElementById('title-input').value
+    document.getElementById("aid-title").innerText = title
 }

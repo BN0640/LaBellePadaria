@@ -102,3 +102,8 @@ body{
     font-family: Calibri;
     font-size: 20px;
 }
+.refresh-button{
+    position: absolute;
+    top: 10%;
+    right: 45%;
+}

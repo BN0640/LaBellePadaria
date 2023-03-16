@@ -25,12 +25,13 @@
             <input class="file" type="file" id="file-input" value="Upload" onclick="uploadFile(image= document.getElementById('preview-img'))">
         </form>
         <label class="file-label">Resolução 5x3</label>
-        <input class="title-input">
+        <input id="title-input" class="title-input">
+        <button id="refresh-button" class="refresh-button" onclick="refreshItem()">Refresh</button>
     </div>
     <div class="adm-item-container">
         <img class="adm-item-img" id="preview-img">
         <div class="adm-item-description">
-            <label class="aid-title">Titular</label>
+            <label id="aid-title" class="aid-title">Título</label>
         </div>
     </div>
 </body>
