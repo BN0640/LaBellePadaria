@@ -21,12 +21,21 @@
         <img class="img3" height="125" src="img/banner_center.png">
     </a>
     <div class="adm-options-container">
-        <form action="/path/to/upload/handler">
-            <input class="file" type="file" id="file-input" value="Upload" onclick="uploadFile(image= document.getElementById('preview-img'))">
-        </form>
-        <label class="file-label">Resolução 5x3</label>
-        <input id="title-input" class="title-input">
-        <button id="refresh-button" class="refresh-button" onclick="refreshItem()">Refresh</button>
+        <div class="adm-opt-box">
+            <form action="/path/to/upload/handler">
+                <input class="file" type="file" id="file-input" value="Upload" onclick="uploadFile(image= document.getElementById('preview-img'))">
+            </form>
+            <label class="file-label">Resolução 5x3</label>
+        </div>
+        <div class="adm-opt-box">
+            <input id="title-input" class="title-input">
+        </div>
+        <div class="adm-opt-box">
+            <input id="desc-input" class="desc-input">
+        </div>
+        <div class="adm-opt-box">
+            <button style="height: 100%; width: 15%; top:0%; position: absolute;" id="refresh-button" class="refresh-button" onclick="refreshItem()">Refresh</button>
+        </div>
     </div>
     <div class="adm-item-container">
         <img class="adm-item-img" id="preview-img">

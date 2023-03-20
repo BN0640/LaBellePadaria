@@ -60,6 +60,18 @@ body{
     width: 400px;
     left: 42%;
     top: 200px;
+    background-color: yellow;
+    white-space:nowrap;
+}
+.adm-opt-box{
+    position: relative;
+    height: 9%;
+    width: 98%;
+    top: 1%;
+    left: 1%;
+    background-color: rgb(5, 5, 5);
+    border: 1px solid #FFFFFF;
+
 }
 .file{
     cursor: pointer;
@@ -71,7 +83,7 @@ body{
 .title-input{
     cursor: pointer;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 10%;
 }
 .file-label{
@@ -105,5 +117,5 @@ body{
 .refresh-button{
     position: absolute;
     top: 10%;
-    right: 45%;
+    left: 45%;
 }

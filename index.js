@@ -16,4 +16,6 @@ function uploadFile(image){
 function refreshItem(){
     title = document.getElementById('title-input').value
     document.getElementById("aid-title").innerText = title
+    desc = document.getElementById('title-input').value
+    document.getElementById("aid-title").innerText = title
 }
