@@ -1,0 +1,87 @@
+/*input*/
+    #title-input{
+        position: absolute;
+        font-family: sans-serif;
+        font-size: 17px;
+        height: 15%;
+        width: 50%;
+        left: 5%;
+        top: 10%;
+    }
+    #price-input{
+        position: absolute;
+        font-family: sans-serif;
+        font-size: 17px;
+        height: 15%;
+        width: 15%;
+        right: 5%;
+        top: 10%;
+    }
+    #description-input{
+        font-family: sans-serif;
+        box-sizing: border-box;
+        white-space: pre-line;
+        word-wrap: break-word;
+        position: absolute;
+        overflow: hidden;
+        resize: none;
+        font-size: 17px;
+        height: 40%;
+        width: 90%;
+        left: 5%;
+        top: 35%;
+    }
+    #available-input{
+        position: absolute;
+        font-family: sans-serif;
+        font-size: 17px;
+        bottom: 5%;
+        left: 5%;
+        height: 13%;
+        width: 50%;
+    }
+/*output*/
+    #title-output{
+        font-family: sans-serif;
+        position: absolute;
+        font-weight: bold;
+        font-size: 20px;
+        height: 15%;
+        width: 50%;
+        left: 5%;
+        top: 10%;
+    }
+    #price-output{
+        font-family: sans-serif;
+        position: absolute;
+        font-weight: bold;
+        color: #1dfc00;
+        font-size: 17px;
+        height: 15%;
+        width: 15%;
+        right: 5%;
+        top: 10%;
+    }
+    #description-output{
+        font-family: sans-serif;
+        box-sizing: border-box;
+        white-space: pre-line;
+        word-wrap: break-word;
+        position: absolute;
+        overflow: hidden;
+        resize: none;
+        font-size: 17px;
+        height: 40%;
+        width: 90%;
+        left: 5%;
+        top: 35%;
+    }
+    #available-output{
+        position: absolute;
+        font-family: sans-serif;
+        font-size: 17px;
+        bottom: 5%;
+        left: 5%;
+        height: 13%;
+        width: 50%;
+    }

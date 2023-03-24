@@ -1,121 +1,81 @@
 body{
     background-color: #202022;
+    padding: 0px;
+    margin: 0px;
 }
-.img0-1{
-    background-color: #040406;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 125px;
-}
-.img0-2{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 99.89%;
-    height: 125px;
-    border: 1px solid #FFFFFF;
-}    
-.img1{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.img2{
-    position: absolute;
-    top: 0;
-    left: 25%;
+#screen_center{
+    background-color: #FFFFFF;
     transform: translate(-50%);
-}
-.img3{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-}
-.img4{
-    position: absolute;
-    top: 0;
-    left: 75%;
-    transform: translate(-50%);
-}
-.img5{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-.adm-item-container{
-    background-color: #000000;
-    position: absolute;
-    height: 400px;
-    width: 400px;
-    left: 10%;
-    top: 200px;
-    border: 1px solid #FFFFFF;
-}
-.adm-options-container{
-    position: absolute;
-    height: 400px;
-    width: 400px;
-    left: 42%;
-    top: 200px;
-    background-color: yellow;
-    white-space:nowrap;
-}
-.adm-opt-box{
+    box-sizing: border-box;
     position: relative;
-    height: 9%;
-    width: 98%;
-    top: 1%;
-    left: 1%;
-    background-color: rgb(5, 5, 5);
-    border: 1px solid #FFFFFF;
-
+    height: 400px;
+    width: 85%;
+    top: 200px;
+    left: 50%;
 }
-.file{
-    cursor: pointer;
-    color: #ffffff;
-    position: absolute;
-    right: 0;
-    top: 1%;
-}
-.title-input{
-    cursor: pointer;
-    position: absolute;
-    left: 0;
-    top: 10%;
-}
-.file-label{
-    color: #ffffff;
-    position: absolute;
-    top: 1%;
-    font-family: Calibri;
-    font-size: 16px;
-}
-.adm-item-img{
-    position: absolute;
-    height: 240px;
-    width: 400px;
-    border: 1px solid #FFFFFF;
-}
-.adm-item-description{
-    position: absolute;
-    top: 240px;
-    height: 160px;
-    width: 400px;
-    border: 1px solid #FFFFFF;
-}
-.aid-title{
-    color: #ffffff;
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    font-family: Calibri;
-    font-size: 20px;
-}
-.refresh-button{
-    position: absolute;
-    top: 10%;
-    left: 45%;
-}
+    #pre-viewer{
+        background-color: #EEEEEE;
+        box-sizing: border-box;
+        position: absolute;
+        height: 100%;
+        width: 400px;
+        left: 0%;
+        top: 0%;
+    }
+        .pv-img{
+            background-color: #DDDDDD;
+            box-sizing: border-box;
+            position: absolute;
+            height: 100%;
+            width: 400px;
+            left: 0%;
+            top: 0%;
+        }
+        .pv-description{
+            background-color: #CCCCCC;
+            box-sizing: border-box;
+            position: absolute;
+            width: 400px;
+            height: 40%;
+            left: 0%;
+            top: 60%;
+        }
+        #pv-writer{
+            background-color: #EEEEEE;
+            box-sizing: border-box;
+            position: absolute;
+            height: 100%;
+            width: 400px;
+            right: 0%;
+            top: 0%;
+        }
+    #opt-col{
+        background-color: #EEEEEE;
+        transform: translate(-50%);
+        box-sizing: border-box;
+        position: absolute;
+        height: 100%;
+        width: 300px;
+        left: 50%;
+        top: 0%;
+    }
+        .opt{
+            background-color: #DDDDDD;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            font-size: 17px;
+            padding: 9px;
+            width: 100%;
+            height: 10%;
+        }
+        .color-picker{
+            background-color: initial;
+            position: static;
+            top: 0px;
+            left: 0px;
+            height: 17px;
+            width: 13px;
+            padding:initial;
+            border: 10px;
+            margin: 3px 3px 3px 4px;
+        }

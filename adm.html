@@ -5,43 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>adm</title>
-    <link rel="stylesheet" type="text/css" href="adm.css">
+    <link rel="stylesheet" href="adm.css">
+    <link rel="stylesheet" href="adm-input-output.css">
+    <link rel="stylesheet" href="banner.css">
 </head>
 <body>
     <script src="index.js"></script>
-    <div class="img0-1"></div>
-    <img class="img1" height="125" src="img/banner_left.png">
-    <img class="img5" height="125" src="img/banner_right.png">
-    <img class="img2" height="125" src="img/banner_center_left.png">
-    <div class="img0-2"></div>
-    <a href="https://www.instagram.com/padaria__labelle/">
-        <img class="img4" height="125" src="img/banner_center_right.png">
-    </a>  
-    <a href="http://127.0.0.1:5500/LaBellePadaria/homepage.html">
-        <img class="img3" height="125" src="img/banner_center.png">
-    </a>
-    <div class="adm-options-container">
-        <div class="adm-opt-box">
-            <form action="/path/to/upload/handler">
-                <input class="file" type="file" id="file-input" value="Upload" onclick="uploadFile(image= document.getElementById('preview-img'))">
-            </form>
-            <label class="file-label">Resolução 5x3</label>
-        </div>
-        <div class="adm-opt-box">
-            <input id="title-input" class="title-input">
-        </div>
-        <div class="adm-opt-box">
-            <input id="desc-input" class="desc-input">
-        </div>
-        <div class="adm-opt-box">
-            <button style="height: 100%; width: 15%; top:0%; position: absolute;" id="refresh-button" class="refresh-button" onclick="refreshItem()">Refresh</button>
-        </div>
+    <div class="banner_bg">
+        <img class="banner_left" src="img/banner_left.png">
+        <img class="banner_center_left" src="img/banner_center_left.png">
+        <a href="http://127.0.0.1:5500/LaBellePadaria/homepage.html">
+            <img class="banner_center" src="img/banner_center.png"></a>
+        <a href="https://www.instagram.com/padaria__labelle/">
+            <img class="banner_center_right" src="img/banner_center_right.png"></a>
+        <img class="banner_right" src="img/banner_right.png">
     </div>
-    <div class="adm-item-container">
-        <img class="adm-item-img" id="preview-img">
-        <div class="adm-item-description">
-            <label id="aid-title" class="aid-title">Título</label>
-        </div>
+    <div id="screen_center">
+        <!--Pre-Viewer-->
+            <div id="pre-viewer">
+                <div class="pv-img"></div>
+                <div class="pv-description">
+                    <label id="title-output">Título</label>
+                    <label id="price-output">Preço</label>
+                    <label id="description-output">Descrição</label>
+                    <label id="available-output">unidades disponiveis</label>
+                </div>
+            </div>
+        <!--Column-->
+            <div id="opt-col">
+                <div id="opt-1" class="opt"><input type="checkbox" id="tranparent-checkbox" value="isChecked"> Descrição transparente</div>
+                <div id="opt-2" class="opt">
+                    <input type="color" class="color-picker" id="color-picker-title" onchange="refreshColor()"> Cor do titulo
+                </div>
+                <div id="opt-3" class="opt">
+                    <input type="color" class="color-picker" id="color-picker-price" onchange="refreshColor()"> Cor do preço
+                </div>
+                <div id="opt-4" class="opt">
+                    <input type="color" class="color-picker" id="color-picker-description" onchange="refreshColor()"> Cor da descrição
+                </div>
+                <div id="opt-5" class="opt">
+                    <input type="color" class="color-picker" id="color-picker-available" onchange="refreshColor()"> Cor das unidades disponiveis
+                </div>
+            </div>
+        <!--Pre-Viewer-Writer-->
+            <div id="pv-writer">
+                <div class="pv-img">
+                    
+                </div>
+                <div class="pv-description">
+                    <input id="title-input" onchange="refreshTitleText()">
+                    <input id="price-input" onchange="refreshPriceText()">
+                    <textarea id="description-input" maxlength="135" onchange="refreshDescriptionText()"></textarea>
+                    <input id="available-input" onchange="refreshAvailableText()">
+                </div>
+            </div>
     </div>
 </body>
 </html>
