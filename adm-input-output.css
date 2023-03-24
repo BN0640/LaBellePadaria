@@ -1,50 +1,81 @@
 /*input*/
     #title-input{
-        position: absolute;
+        border: 1px solid#FFFFFF;
         font-family: sans-serif;
-        font-size: 17px;
-        height: 15%;
-        width: 50%;
-        left: 5%;
+        background: #101010;
+        position: absolute;
+        color: #FFFFFF;
         top: 10%;
+        left: 5%;
+        width: 50%;
+        height: 15%;
+        font-size: 17px;
+        border-radius: 5px;
     }
     #price-input{
-        position: absolute;
+        border: 1px solid#FFFFFF;
         font-family: sans-serif;
-        font-size: 17px;
-        height: 15%;
-        width: 15%;
-        right: 5%;
+        background: #101010;
+        position: absolute;
+        color: #FFFFFF;
         top: 10%;
+        right: 5%;
+        width: 22%;
+        height: 15%;
+        font-size: 17px;
+        border-radius: 5px;
     }
     #description-input{
+        border: 1px solid#FFFFFF;
         font-family: sans-serif;
         box-sizing: border-box;
         white-space: pre-line;
         word-wrap: break-word;
+        background: #101010;
         position: absolute;
+        color: #FFFFFF;
         overflow: hidden;
         resize: none;
-        font-size: 17px;
-        height: 40%;
-        width: 90%;
         left: 5%;
         top: 35%;
+        width: 90%;
+        height: 40%;
+        font-size: 17px;
+        border-radius: 5px;
     }
     #available-input{
-        position: absolute;
+        border: 1px solid#FFFFFF;
         font-family: sans-serif;
-        font-size: 17px;
-        bottom: 5%;
+        background: #101010;
+        position: absolute;
+        color: #FFFFFF;
         left: 5%;
-        height: 13%;
+        bottom: 5%;
         width: 50%;
+        height: 13%;
+        font-size: 17px;
+        border-radius: 5px;
     }
+    #file-input-label{
+        background-image: url("img/placeholder_img.png");
+        background-size:400px 240px;
+        font-family: sans-serif;
+        box-sizing: border-box;
+        position: absolute;
+        font-size: 17px;
+        height: 100%;
+        width: 100%;
+    }
+    #file-input{
+        display: none;
+    }
+        
 /*output*/
     #title-output{
         font-family: sans-serif;
         position: absolute;
         font-weight: bold;
+        color: #FFFFFF;
         font-size: 20px;
         height: 15%;
         width: 50%;
@@ -55,10 +86,10 @@
         font-family: sans-serif;
         position: absolute;
         font-weight: bold;
-        color: #1dfc00;
+        color: #42C46C;
         font-size: 17px;
         height: 15%;
-        width: 15%;
+        width: 22%;
         right: 5%;
         top: 10%;
     }
@@ -68,6 +99,7 @@
         white-space: pre-line;
         word-wrap: break-word;
         position: absolute;
+        color: #FFFFFF;
         overflow: hidden;
         resize: none;
         font-size: 17px;
@@ -77,11 +109,13 @@
         top: 35%;
     }
     #available-output{
-        position: absolute;
         font-family: sans-serif;
+        position: absolute;
+        color: #FFFFFF;
         font-size: 17px;
-        bottom: 5%;
-        left: 5%;
         height: 13%;
         width: 50%;
+        bottom: 5%;
+        left: 5%;
     }
+    

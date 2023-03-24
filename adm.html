@@ -23,8 +23,10 @@
     <div id="screen_center">
         <!--Pre-Viewer-->
             <div id="pre-viewer">
-                <div class="pv-img"></div>
-                <div class="pv-description">
+                <div class="pv-img-box">
+                    <img id="pv-img">
+                </div>
+                <div id="pv-description" class="pv-description">
                     <label id="title-output">Título</label>
                     <label id="price-output">Preço</label>
                     <label id="description-output">Descrição</label>
@@ -33,28 +35,32 @@
             </div>
         <!--Column-->
             <div id="opt-col">
-                <div id="opt-1" class="opt"><input type="checkbox" id="tranparent-checkbox" value="isChecked"> Descrição transparente</div>
-                <div id="opt-2" class="opt">
-                    <input type="color" class="color-picker" id="color-picker-title" onchange="refreshColor()"> Cor do titulo
+                <div class="opt"><input type="checkbox" id="tranparent-checkbox" onchange="changeDescriptionVisibility()" value="isChecked"> Descrição transparente</div>
+                <div class="opt">
+                    <input type="color" value="#FFFFFF" class="color-picker" id="color-picker-bg" onchange="refreshColorBg()"> Cor do plano de fundo
                 </div>
-                <div id="opt-3" class="opt">
-                    <input type="color" class="color-picker" id="color-picker-price" onchange="refreshColor()"> Cor do preço
+                <div class="opt">
+                    <input type="color" value="#FFFFFF" class="color-picker" id="color-picker-title" onchange="refreshColorTitle()"> Cor do titulo
                 </div>
-                <div id="opt-4" class="opt">
-                    <input type="color" class="color-picker" id="color-picker-description" onchange="refreshColor()"> Cor da descrição
+                <div class="opt">
+                    <input type="color" value="#42C46C" class="color-picker" id="color-picker-price" onchange="refreshColorPrice()"> Cor do preço
                 </div>
-                <div id="opt-5" class="opt">
-                    <input type="color" class="color-picker" id="color-picker-available" onchange="refreshColor()"> Cor das unidades disponiveis
+                <div class="opt">
+                    <input type="color" value="#FFFFFF" class="color-picker" id="color-picker-description" onchange="refreshColorDescription()"> Cor da descrição
+                </div>  
+                <div class="opt">
+                    <input type="color" value="#FFFFFF" class="color-picker" id="color-picker-available" onchange="refreshColorAvailable()"> Cor das unidades disponiveis
                 </div>
             </div>
         <!--Pre-Viewer-Writer-->
             <div id="pv-writer">
                 <div class="pv-img">
-                    
+                    <label id="file-input-label" for="file-input"></label>
+                    <input type="file" id="file-input" accept="image/*" onclick="uploadFile(path= document.getElementById('pv-img'))">
                 </div>
                 <div class="pv-description">
                     <input id="title-input" onchange="refreshTitleText()">
-                    <input id="price-input" onchange="refreshPriceText()">
+                    <input id="price-input" value="R$ " onchange="refreshPriceText()">
                     <textarea id="description-input" maxlength="135" onchange="refreshDescriptionText()"></textarea>
                     <input id="available-input" onchange="refreshAvailableText()">
                 </div>
