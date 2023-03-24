@@ -1,5 +1,5 @@
 body{
-    background-color: #202022;
+    background-color: #000000;
     margin: 0px;
     padding: 0px;
 }
@@ -13,7 +13,7 @@ body{
     transform: translate(-50%);
     overflow-x: scroll;
     white-space: nowrap;
-    background-color: #040406;
+    background-color: #101010;
     border: 1px solid #FFFFFF;
 }
 .item{
@@ -22,6 +22,6 @@ body{
     width: 410px;
     height: 100%;
     vertical-align: top;
-    background-color: #040406;
+    background-color: #101010;
     border: 1px solid #FFFFFF;
 }
