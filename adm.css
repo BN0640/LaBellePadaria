@@ -20,7 +20,7 @@ body{
         left: 0%;
         top: 0%;
     }
-        .pv-img-box{
+        #pv-img-box{
             box-sizing: border-box;
             position: absolute;
             height: 60%;
@@ -33,14 +33,20 @@ body{
             width: 100%;
         }
         .pv-description{
-            border-top: 1px solid #FFFFFF;
-            background-color: #101010;
             box-sizing: border-box;
             position: absolute;
             width: 400px;
             height: 40%;
             left: 0%;
             top: 60%;
+        }
+        #pv-description{
+            border-top: 1px solid #FFFFFF;
+            background-color: #101010;
+        }
+        #pw-description{
+            border-top: 1px solid #FFFFFF;
+            background-color: #101010;
         }
         #pv-writer{
             border: 1px solid #FFFFFF;

@@ -36,7 +36,24 @@ function refresh(){
 
     color_available = document.getElementById('color-picker-available').value
     document.getElementById("available-output").style.color = color_available
+}
 
+function refreshBg(){
     color_bg = document.getElementById('color-picker-bg').value
     document.getElementById("pv-description").style.backgroundColor = color_bg  
+}
+function changeCheckbox(){
+    checkBox = document.getElementById("tranparent-checkbox");
+    description = document.getElementById("pv-description");
+    imgBox = document.getElementById("pv-img-box")
+    if (checkBox.checked) {
+        description.style.backgroundColor = "#10101000";
+        description.style.borderTop = "none"
+        imgBox.style.height = "100%"
+    } else {
+        description.style.backgroundColor = "#101010";
+        description.style.borderTop = "1px solid #FFFFFF"
+        imgBox.style.height = "60%"
+    };
+    
 }

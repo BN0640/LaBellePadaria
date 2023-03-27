@@ -23,7 +23,7 @@
     <div id="screen_center">
         <!--Pre-Viewer-->
             <div id="pre-viewer">
-                <div class="pv-img-box">
+                <div id="pv-img-box">
                     <img id="pv-img">
                 </div>
                 <div id="pv-description" class="pv-description">
@@ -35,9 +35,9 @@
             </div>
         <!--Column-->
             <div id="opt-col">
-                <div class="opt"><input type="checkbox" id="tranparent-checkbox" onchange="changeDescriptionVisibility()" value="isChecked"> Descrição transparente</div>
+                <div class="opt"><input type="checkbox" id="tranparent-checkbox" onchange="changeCheckbox()"> Descrição transparente</div>
                 <div class="opt">
-                    <input type="color" value="#101010" class="color-picker" id="color-picker-bg" onchange="refresh()"> Cor do plano de fundo
+                    <input type="color" value="#101010" class="color-picker" id="color-picker-bg" onchange="refreshBg()"> Cor do plano de fundo
                 </div>
                 <div class="opt">
                     <input type="color" value="#FFFFFF" class="color-picker" id="color-picker-title" onchange="refresh()"> Cor do titulo
@@ -58,7 +58,7 @@
                     <label id="file-input-label" for="file-input"></label>
                     <input type="file" id="file-input" accept="image/*" onclick="uploadFile(path= document.getElementById('pv-img'))">
                 </div>
-                <div class="pv-description">
+                <div id="pw-description" class="pv-description">
                     <input value="Título" id="title-input" onchange="refresh()">
                     <input value="Preço" id="price-input" onchange="refresh()">
                     <textarea id="description-input" maxlength="135" onchange="refresh()">Descrição</textarea>
