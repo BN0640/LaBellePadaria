@@ -16,12 +16,4 @@ body{
     background-color: #101010;
     border: 1px solid #FFFFFF;
 }
-.item{
-    display: inline-block;
-    box-sizing: border-box;
-    width: 410px;
-    height: 100%;
-    vertical-align: top;
-    background-color: #101010;
-    border: 1px solid #FFFFFF;
-}
+    
